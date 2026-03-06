@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -53,7 +53,6 @@ const PROJECTS = [
 ];
 
 // ─── Animations ───────────────────────────────────────────────────────────────
-const ease = [0.22, 1, 0.36, 1] as any;
 
 const pageVariants = {
     hidden: { opacity: 0, clipPath: "inset(0 0 100% 0)", y: 0 },
