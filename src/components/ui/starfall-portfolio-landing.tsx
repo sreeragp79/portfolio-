@@ -53,7 +53,7 @@ const PROJECTS = [
 ];
 
 // ─── Animations ───────────────────────────────────────────────────────────────
-const ease = [0.22, 1, 0.36, 1] as const;
+const ease = [0.22, 1, 0.36, 1] as any;
 
 const pageVariants = {
     hidden: { opacity: 0, clipPath: "inset(0 0 100% 0)", y: 0 },
@@ -61,18 +61,18 @@ const pageVariants = {
         opacity: 1,
         clipPath: "inset(0 0 0% 0)",
         y: 0,
-        transition: { duration: 1.5, ease: [0.76, 0, 0.24, 1], staggerChildren: 0.3, delayChildren: 0.4 }
+        transition: { duration: 1.5, ease: [0.76, 0, 0.24, 1] as any, staggerChildren: 0.3, delayChildren: 0.4 }
     },
     exit: {
         opacity: 0,
         clipPath: "inset(100% 0 0 0)",
-        transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] }
+        transition: { duration: 1.2, ease: [0.76, 0, 0.24, 1] as any }
     }
 };
 
 const childVariants = {
     hidden: { opacity: 0, y: 150 },
-    visible: { opacity: 1, y: 0, transition: { duration: 1.8, ease: [0.22, 1, 0.36, 1] } }
+    visible: { opacity: 1, y: 0, transition: { duration: 1.8, ease: [0.22, 1, 0.36, 1] as any } }
 };
 
 // ─── Components ────────────────────────────────────────────────────────────────
